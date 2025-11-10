@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  /* background: var(--background); */
+  /* color: var(--foreground); */
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e8e8e8;
+}
+
+.bg-p {
+  background: #ff9629;
+}
+
+.text-p {
+  color: #ff9629;
+}
+
+.text-b {
+  color: #141416;
+}
+
+.text-g {
+  color: #737373;
+}
+
+/* CSS for the background falling effect */
+.pattern-bg {
+  background-image: url("/images/bg-com.svg");
+  background-repeat: repeat-y;
+  background-size: cover; /* cover to fill the width */
+  animation: fall 120s linear infinite; /* slow and seamless */
+}
+
+@keyframes fall {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 100%;
+  }
+}
+
+/* ✅ Prevent horizontal scroll and white space on mobile */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
+/* ✅ Optional: Also fix some elements that can cause overflow */
+* {
+  box-sizing: border-box;
+}
+
+/* ✅ Optional: smooth scrolling for better UX */
+html {
+  scroll-behavior: smooth;
+}
