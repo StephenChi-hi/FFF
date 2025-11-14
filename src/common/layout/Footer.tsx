@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 import {
   FaFacebookF,
@@ -38,7 +39,7 @@ const Footer: React.FC = () => {
             <a href="#" className="hover:text-white transition-colors">
               <img src="/icons/facebook.svg" alt="facebook" />
             </a>
-            <a href="#" className="hover:text-white transition-colors">
+            <a href="" className="hover:text-white transition-colors">
               <img src="/icons/instagram.svg" alt="instagram" />
             </a>
             <a href="#" className="hover:text-white transition-colors">
@@ -126,12 +127,14 @@ const Footer: React.FC = () => {
         </div>
         <div className="">
           <h3 className="text-white font-semibold mb-4">Technology by </h3>
-
-          <img
-            src="/ForestanceLogo.svg"
-            alt="Forestance Logo"
-            className="w-28 mt-1"
-          />
+          <Link href="https://www.instagram.com/forestance_">
+            {" "}
+            <img
+              src="/ForestanceLogo.svg"
+              alt="Forestance Logo"
+              className="w-28 mt-1"
+            />
+          </Link>
         </div>
       </div>
     </footer>

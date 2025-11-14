@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function Section1A() {
   return (
@@ -28,20 +29,36 @@ export default function Section1A() {
           </p>
 
           <p className="leading-relaxed mb-[40px]">
-            At FEC, we don’t just teach fabrication — we train people to turn
-            their skills into profitable businesses. By combining hands-on
-            technical training with real-world entrepreneurship, we help makers
-            become founders — and ideas — become ventures.
+            FEC is a core part of the Fabgarage ecosystem, combining advanced
+            fabrication skills with practical entrepreneurial training. Backed
+            by the Megaplux Group, we draw strength from a diverse network that
+            includes Bar Essential, Thalia by Alice, and Megaplux Global—an
+            industry leader known for delivering major installations and
+            campaigns for brands like MTN, Nigerian Breweries, and Guinness
+            Nigeria.
           </p>
 
-          <button className=" text-[19px] text-black font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full  pl-[24px] py-[12px] pr-[12px] bg-[#F5FFFF] hover:bg-yellow-400 transition">
+          <p className="leading-relaxed mb-[40px]">
+            FEC is a core part of the Fabgarage ecosystem, combining advanced
+            fabrication skills with practical entrepreneurial training. Backed
+            by the Megaplux Group, we draw strength from a diverse network that
+            includes Bar Essential, Thalia by Alice, and Megaplux Global—an
+            industry leader known for delivering major installations and
+            campaigns for brands like MTN, Nigerian Breweries, and Guinness
+            Nigeria.
+          </p>
+
+          <Link
+            href="https://forms.gle/DZ8v7GvKLV8oQ8mH6"
+            className=" text-[19px] text-black font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full  pl-[24px] py-[12px] pr-[12px] bg-[#F5FFFF] hover:bg-yellow-400 transition"
+          >
             Join us Today{" "}
             <img
               src="/icons/arrow1.svg"
               alt=""
               className="w-[40px] h-[40px] "
             />{" "}
-          </button>
+          </Link>
         </motion.div>
 
         {/* RIGHT IMAGES — comes from the right */}
@@ -52,7 +69,7 @@ export default function Section1A() {
           viewport={{ once: true }}
           className="relative flex flex-col items-center"
         >
-          <img src="/images/plash1.svg" alt="" />
+          <img src="/images/plash1.svg" alt="" className="object-cover " />
         </motion.div>
       </div>
 

@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const sections = [
   { name: "Home", id: "home" },
@@ -113,9 +114,12 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Button */}
-          <button className="hidden md:block rounded-lg bg-[#FFCC29] px-[24px] py-[12px] text-white font-medium hover:bg-orange-600 transition">
-            Learn more
-          </button>
+          <Link
+            href="https://forms.gle/DZ8v7GvKLV8oQ8mH6"
+            className="hidden md:block rounded-lg bg-[#FFCC29] px-[24px] py-[12px] text-white font-medium hover:bg-orange-600 transition"
+          >
+            Contact Us{" "}
+          </Link>
 
           {/* Mobile Toggle */}
           <button

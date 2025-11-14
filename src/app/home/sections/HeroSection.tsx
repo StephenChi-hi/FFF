@@ -7,6 +7,7 @@ import Image from "next/image";
 import { CgArrowLongLeft } from "react-icons/cg";
 import { ArrowBigDown } from "lucide-react";
 import { FaLeftRight } from "react-icons/fa6";
+import Link from "next/link";
 
 const HeroSection = () => {
   const controls = useAnimation();
@@ -88,7 +89,7 @@ const HeroSection = () => {
               className="h-[20px] sm:h-[40px]"
             />
             <p className="font-semibold ">
-              Over 200+ Graduates Trained Across Africa
+              200 newly admitted students for the pilot cohort 2025{" "}
             </p>
           </div>
           <h1 className="text-[42px] sm:text-[63px] my-[24px] max-w-[974px] font-bold leading-tight md:text-6xl">
@@ -99,14 +100,17 @@ const HeroSection = () => {
             entrepreneurship to shape creators into founders.
           </p>
           <div className="mt-[24px] pb-[100px] flex flex-col w-full sm:w-fit  items-center gap-4 md:flex-row">
-            <button className=" text-black font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full  pl-[24px] py-[12px] pr-[12px] bg-[#F5FFFF] hover:bg-yellow-400 transition">
+            <Link
+              href="https://forms.gle/DZ8v7GvKLV8oQ8mH6"
+              className=" text-black font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full  pl-[24px] py-[12px] pr-[12px] bg-[#F5FFFF] hover:bg-yellow-400 transition"
+            >
               Apply Now
               <img
                 src="/icons/arrow1.svg"
                 alt=""
                 className="w-[40px] h-[40px] "
               />{" "}
-            </button>
+            </Link>
             <button className="rounded-full flex gap-2  items-center px-6 py-3  ">
               <p className=" underline ">Learn More</p>{" "}
               <img
