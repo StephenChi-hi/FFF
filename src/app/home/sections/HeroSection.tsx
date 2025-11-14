@@ -98,7 +98,7 @@ const HeroSection = () => {
             We blend hands-on fabrication skills with real-world
             entrepreneurship to shape creators into founders.
           </p>
-          <div className="mt-[24px] flex flex-col w-full sm:w-fit  items-center gap-4 md:flex-row">
+          <div className="mt-[24px] pb-[100px] flex flex-col w-full sm:w-fit  items-center gap-4 md:flex-row">
             <button className=" text-black font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full  pl-[24px] py-[12px] pr-[12px] bg-[#F5FFFF] hover:bg-yellow-400 transition">
               Apply Now
               <img
@@ -117,7 +117,7 @@ const HeroSection = () => {
             </button>
           </div>
           {/* Stats */}
-          <div className="pt-[50px] sm:pt-[144px] container  pb-[52px] grid grid-cols-2 gap-8  md:grid-cols-4">
+          <div className="pt-[50px] hidden sm:pt-[144px] container  pb-[52px] grid- grid-cols-2 gap-8  md:grid-cols-4">
             {[
               {
                 end: 300,
