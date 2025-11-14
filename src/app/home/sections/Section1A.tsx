@@ -69,7 +69,14 @@ export default function Section1A() {
           viewport={{ once: true }}
           className="relative flex flex-col items-center"
         >
-          <img src="/images/plash1.svg" alt="" className="object-cover " />
+          {/* <img src="/images/plash1.svg" alt="" className="object-cover " /> */}
+          <Image
+            src="/images/plash1.svg"
+            alt=""
+            width={600} // set actual display width
+            height={400} // set actual display height
+            className="object-cover"
+          />
         </motion.div>
       </div>
 
