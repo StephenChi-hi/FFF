@@ -29,6 +29,8 @@ const Footer: React.FC = () => {
             The Federation Entrepreneurship Centre (FEC) empowers makers &
             innovators with hands-on fabrication training, business skills, &
             access to advanced tools for real-world impact.
+            <br /><br />
+            398b Herbert Macaulay Way, Yaba Lagos
           </p>
 
           {/* Social Icons */}
