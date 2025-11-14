@@ -158,9 +158,12 @@ const Navbar = () => {
                   {item.name}
                 </button>
               ))}
-              <button className="mt-2 rounded-lg bg-[#FFCC29] px-6 py-2 text-white font-medium hover:bg-orange-600 transition">
+              <Link
+                href="https://forms.gle/DZ8v7GvKLV8oQ8mH6"
+                className="mt-2 rounded-lg bg-[#FFCC29] px-6 py-2 text-white font-medium hover:bg-orange-600 transition"
+              >
                 Learn more
-              </button>
+              </Link>
             </div>
           </motion.div>
         )}
