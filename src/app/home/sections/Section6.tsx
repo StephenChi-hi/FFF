@@ -22,41 +22,44 @@ export default function Section6() {
   const cards = [
     {
       id: 0,
-      frontColor: "bg-yellow-400",
-      backColor: "bg-green-500",
+      textColor: " text-black",
+      frontColor: "bg-[#FFCC29]",
+      backColor: "bg-[#A8CF45]",
       frontText: {
         title: "Makers and Fabricators",
         body: "Perfect for anyone passionate about 3D printing, CNC machining, or digital fabrication, looking to bring creative ideas to life through hands-on making.",
       },
       backText: {
-        title: "Innovative Crafters",
-        body: "Hands-on creators merging creativity and craftsmanship to build the future.",
+        title: "Entrepreneurs and Founders",
+        body: "Designed for visionaries building hardware startups or product-based ventures, from concept validation to market-ready innovation.",
       },
     },
     {
       id: 1,
+      textColor: " text-white",
       frontColor: "bg-blue-500",
-      backColor: "bg-orange-500",
+      backColor: "bg-[#FF9629]",
       frontText: {
         title: "Innovators and Engineers",
-        body: "For technical minds ready to turn prototypes into real products.",
+        body: "For creators eager to master woodworking, metalwork, or electronics, & expand their ability to design & build functional projects.",
       },
       backText: {
-        title: "Tech Pioneers",
-        body: "Driving innovation through engineering and impactful design.",
+        title: "Researchers and Educators",
+        body: "For those passionate about advancing knowledge, experimenting with new technologies, and inspiring the next generation of innovators.",
       },
     },
     {
       id: 2,
+      textColor: " text-white",
       frontColor: "bg-purple-600",
       backColor: "bg-pink-500",
       frontText: {
         title: "Creative Builders",
-        body: "For creators mastering woodworking, metalwork, or electronics.",
+        body: "For creators eager to master woodworking, metalwork, or electronics, & expand their ability to design & build functional projects.",
       },
       backText: {
-        title: "Design Visionaries",
-        body: "Blending art and skill to push creative boundaries.",
+        title: "Students and Graduates",
+        body: "Tailored for learners seeking real-world fabrication and business skills that prepare them for careers in manufacturing, & entrepreneurship.",
       },
     },
   ];
@@ -68,7 +71,7 @@ export default function Section6() {
       <div className="flex flex-col md:flex-row gap-12 items-start justify-between">
         {/* Left Text Section */}
         <div className="md:w-1/3 relative">
-          <div className=" absolute container left-[100px] flex flex-col w-[700px]">
+          <div className=" sm:absolute p-4 container left-[100px] flex flex-col sm:w-[700px]">
             <p className="text-[16px] text-g font-medium  uppercase mb-[24px]">
               Who Should Join FEC?
             </p>
@@ -80,21 +83,21 @@ export default function Section6() {
         </div>
 
         {/* Right Brick Flex Layout */}
-        <div className="flex flex-row gap-[20px] flex-1 justify-end w-full">
+        <div className="flex flex-row gap-[17px] flex-1 justify-end w-full">
           {/* Column 1 */}
-          <div className="flex flex-col w-[] gap-[20px] flex-1 ">
+          <div className="flex flex-col text-black w-[] gap-[17px] flex-1 ">
             <div className={`h-[180px] rounded-[15px] `} />
-            <div className={`h-[160px] rounded-[15px] ${gray}`} />
+            <div className={`h-[100px] rounded-[15px] ${gray}`} />
             <AnimatedCard
               card={cards[0]}
               isFlipped={flippedIndex === cards[0].id}
               height="h-[220px]"
             />
-            <div className={`h-[160px] rounded-t-[15px] ${gray}`} />
+            <div className={`h-[130px] rounded-t-[15px] ${gray}`} />
           </div>
 
           {/* Column 2 */}
-          <div className="flex flex-col gap-[20px] flex-1 mt-8">
+          <div className="flex  flex-col gap-[17px] flex-1 mt-8">
             <div className={`h-[50px] rounded-b-[15px] ${gray}`} />
 
             <AnimatedCard
@@ -111,10 +114,10 @@ export default function Section6() {
           </div>
 
           {/* Column 3 */}
-          <div className="flex flex-col gap-[20px] flex-1- w-[32px] mt-16">
+          <div className="flex flex-col gap-[17px] flex-1- w-[32px] mt-16">
             <div className={`h-[140px] rounded-l-[15px] ${gray}`} />
-            <div className={`h-[340px] rounded-l-[15px] ${gray}`} />
-            <div className={`h-[300px] rounded-l-[15px] ${gray}`} />
+            <div className={`h-[240px] rounded-l-[15px] ${gray}`} />
+            <div className={`h-[200px] rounded-l-[15px] ${gray}`} />
           </div>
         </div>
       </div>
@@ -133,13 +136,13 @@ function AnimatedCard({
 }) {
   return (
     <motion.div
-      className={`relative w-full ${height}-  h-[350px] rounded-[15px] cursor-pointer [transform-style:preserve-3d]`}
+      className={`relative w-full ${height}-  h-[270px] rounded-[15px] cursor-pointer [transform-style:preserve-3d]`}
       animate={{ rotateY: isFlipped ? 180 : 0 }}
       transition={{ duration: 0.8 }}
     >
       {/* Front */}
       <div
-        className={`absolute inset-0 ${card.frontColor} text-white p-[20px] rounded-[15px] flex flex-col justify-center backface-hidden`}
+        className={`absolute inset-0 ${card.frontColor} ${card.textColor}  p-[20px] rounded-[15px] flex flex-col justify-center backface-hidden`}
       >
         <div className=" relative h-full">
           <div className=" top-[0px] absolute ">
@@ -159,11 +162,11 @@ function AnimatedCard({
 
       {/* Back */}
       <div
-        className={`absolute inset-0 ${card.backColor} text-white p-[20px] rounded-[15px] flex flex-col justify-center [transform:rotateY(180deg)] backface-hidden`}
+        className={`absolute inset-0 ${card.backColor} ${card.textColor}  p-[20px] rounded-[15px] flex flex-col justify-center [transform:rotateY(180deg)] backface-hidden`}
       >
         <div className=" relative h-full">
           <div className=" top-[0px] absolute ">
-            <h3 className="font-semibold text-base mb-2 ">
+            <h3 className="font-semibold text-base  mb-2 ">
               {card.backText.title}
             </h3>
           </div>
@@ -171,7 +174,7 @@ function AnimatedCard({
             {" "}
             <hr />
             <p className="text-sm leading-snug opacity-90 mt-[15px]">
-              {card.backText.title}
+              {card.backText.body}
             </p>
           </div>
         </div>

@@ -41,12 +41,12 @@ const HeroSection = () => {
         paddingTop: padding,
         paddingBottom: padding,
       }}
-      
     >
       {" "}
       <section
+        id="home"
         ref={ref}
-        className="relative flex rounded-[24px]  xl:rounded-[30px] h pt-[120px] sm:pt-[274px] w-full items-center justify-center overflow-hidden "
+        className="relative flex rounded-t-[24px]  xl:rounded-t-[30px] h pt-[120px] sm:pt-[274px] w-full items-center justify-center overflow-hidden "
       >
         {/* Background Image */}
         <motion.div
@@ -56,7 +56,7 @@ const HeroSection = () => {
           className="absolute inset-0 z-0"
         >
           <Image
-            src="/images/herobg.jpg" // replace with your actual image path
+            src="/images/herobg.png" // replace with your actual image path
             alt="Fabrication lab"
             fill
             className="object-cover "
@@ -99,7 +99,7 @@ const HeroSection = () => {
             entrepreneurship to shape creators into founders.
           </p>
           <div className="mt-[24px] flex flex-col w-full sm:w-fit  items-center gap-4 md:flex-row">
-            <button className=" font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full bg-p pl-[24px] py-[12px] pr-[12px]  hover:bg-yellow-400 transition">
+            <button className=" text-black font-semibold flex w-full sm:w-fit items-center gap-2 justify-between sm:justify-center rounded-full  pl-[24px] py-[12px] pr-[12px] bg-[#F5FFFF] hover:bg-yellow-400 transition">
               Apply Now
               <img
                 src="/icons/arrow1.svg"

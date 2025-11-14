@@ -7,7 +7,7 @@ export default function EmailSubscribeSection() {
   const [email, setEmail] = useState("");
 
   return (
-    <section className=" mx-auto container pb-[80px] ">
+    <section className=" mx-auto container py-[80px] ">
       <div className="bg-[#A7D84C] p-[48px]  rounded-[24px]  w-full flex flex-col md:flex-row justify-between items-center gap-6">
         {/* Left Text Section */}
         <div className="text-center md:text-left text-b ">

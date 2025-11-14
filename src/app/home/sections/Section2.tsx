@@ -44,7 +44,7 @@ const tracks: Track[] = [
 
 export default function Section2() {
   return (
-    <section className="py-16 px-6 md:px-12">
+    <section id="programs" className="py-16 px-6 md:px-12">
       <div className="container mx-auto">
         <h4 className="text-sm font-semibold text-[#737373] text-center uppercase">
           Core Training Tracks

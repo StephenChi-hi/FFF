@@ -50,9 +50,14 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gray-50">
+    <section
+      id="faqs"
+      className="w-full py-16 px-4 md:px-8 lg:px-16 bg-gray-50"
+    >
       <div className=" container mx-auto text-center mb-10">
-        <p className="text-[19px] uppercase text-gray-500 tracking-wide">FAQs</p>
+        <p className="text-[19px] uppercase text-gray-500 tracking-wide">
+          FAQs
+        </p>
         <h2 className="text-[43px] md:text-4xl text-b font-semibold mt-2">
           Have Inquiries? Find Answers Here
         </h2>

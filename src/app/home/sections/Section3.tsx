@@ -116,28 +116,33 @@ export default function SectionThree() {
           return (
             <motion.div
               key={item.id}
-              className="absolute bg-white rounded-2xl shadow-2xl p-[60px] md:p-8 w-full md:w-[800px] cursor-pointer origin-center"
+              className="absolute bg-white rounded-2xl shadow-2xl p-4 sm:p-[60px] md:p-8 w-full md:w-[800px] cursor-pointer origin-center"
               onClick={handleNext}
               animate={{ scale, x, opacity, zIndex }}
               transition={{ duration: 0.8, ease: "easeInOut" }}
             >
               <img src="/icons/yuo.svg" alt="" />
-              <p className="text-black text-[27px] mb-[60px] mt-[24px] leading-relaxed">
+              <p className="text-black text-[18px] sm:text-[27px] my-[24px] sm:mb-[60px] sm:mt-[24px] leading-relaxed">
                 {item.text}”
               </p>
 
-              <div className="flex items-center text-black gap-4">
-                <Image
-                  src={item.image}
-                  alt={item.name}
-                  width={50}
-                  height={50}
-                  className="rounded-full object-cover h-[100px] w-[100px]"
-                />
-                <div>
-                  <p className="font-semibold text-[23px]">{item.name}</p>
-                  <p className="text-[19px] ">{item.title}</p>
+              <div className="flex  sm:flex-row flex-col items-center text-black gap-4">
+                <div className="  flex gap-4">
+                  <Image
+                    src={item.image}
+                    alt={item.name}
+                    width={50}
+                    height={50}
+                    className="rounded-full object-cover sm:h-[100px] h-[50px] w-[50px] sm:w-[100px]"
+                  />
+                  <div>
+                    <p className="font-semibold  text-[16px] sm:text-[23px]">
+                      {item.name}
+                    </p>
+                    <p className="text-[14px] sm:text-[19px] ">{item.title}</p>
+                  </div>
                 </div>
+
                 <div className="ml-auto">
                   <Image
                     src={item.companyLogo}
